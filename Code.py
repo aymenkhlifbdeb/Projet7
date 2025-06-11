@@ -1,13 +1,12 @@
 import sys
-from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
+
 
 class Calculatrice(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi("calculatrice.ui", self)
 
-        self.boutonAjouter.clicked.connect(self.addition)
+        self.boutonAjouter.clicked.connect(self.additionn)
         self.boutonSoustraire.clicked.connect(self.soustraction)
         self.boutonMultiplier.clicked.connect(self.multiplication)
         self.boutonDiviser.clicked.connect(self.division)

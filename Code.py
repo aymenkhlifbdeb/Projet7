@@ -5,7 +5,7 @@ class Calculatrice(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi("calculatrice.ui", self)
-
+jjj
         self.boutonAjouter.clicked.connect(self.additionn)
         self.boutonSoustraire.clicked.connect(self.soustraction)
         self.boutonMultiplier.clicked.connect(self.multiplication)
